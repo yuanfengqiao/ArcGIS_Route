@@ -143,6 +143,7 @@ public class App extends Application {
                 final ListenableFuture<RouteParameters> routeParamsFuture = solveRouteTask.createDefaultParametersAsync();
                 routeParamsFuture.addDoneListener(() -> {
 
+
                     try {
                         routeParameters = routeParamsFuture.get();
                         createRouteAndDisplay();

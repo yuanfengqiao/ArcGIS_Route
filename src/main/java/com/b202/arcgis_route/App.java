@@ -108,7 +108,7 @@ public class App extends Application {
     private void setupMobileMap() {
         if (mapView != null) {
 //      String mmpkFile = "./California.mmpk";
-            String mmpkFile = "E:\\idea_workspace\\California.mmpk";
+            String mmpkFile = "D:\\California.mmpk";
             final MobileMapPackage mapPackage = new MobileMapPackage(mmpkFile);
             mapPackage.addDoneLoadingListener(() -> {
                 if (mapPackage.getLoadStatus() == LoadStatus.LOADED && mapPackage.getMaps().size() > 0) {

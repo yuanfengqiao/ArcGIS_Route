@@ -94,6 +94,8 @@ public class App extends Application {
         }
     }
 
+
+
     private void setupGraphicsOverlay() {
         if (mapView != null) {
             graphicsOverlay = new GraphicsOverlay();

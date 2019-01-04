@@ -98,6 +98,8 @@ public class App extends Application {
 
 
 
+
+
     private void setupGraphicsOverlay() {
         if (mapView != null) {
             graphicsOverlay = new GraphicsOverlay();
@@ -142,6 +144,7 @@ public class App extends Application {
             if (solveRouteTask.getLoadStatus() == LoadStatus.LOADED) {
                 final ListenableFuture<RouteParameters> routeParamsFuture = solveRouteTask.createDefaultParametersAsync();
                 routeParamsFuture.addDoneListener(() -> {
+
 
                     try {
                         routeParameters = routeParamsFuture.get();

@@ -110,7 +110,7 @@ public class App extends Application {
     private void setupMobileMap() {
         if (mapView != null) {
 //      String mmpkFile = "./California.mmpk";
-            String mmpkFile = "D:\\IDEAWorkSpace\\get-a-route-and-directions-offline\\display-a-route-with-streetmap-premium\\src\\California.mmpk";
+            String mmpkFile = "E:\\idea_workspace\\California.mmpk";
             final MobileMapPackage mapPackage = new MobileMapPackage(mmpkFile);
             mapPackage.addDoneLoadingListener(() -> {
                 if (mapPackage.getLoadStatus() == LoadStatus.LOADED && mapPackage.getMaps().size() > 0) {
@@ -144,6 +144,7 @@ public class App extends Application {
             if (solveRouteTask.getLoadStatus() == LoadStatus.LOADED) {
                 final ListenableFuture<RouteParameters> routeParamsFuture = solveRouteTask.createDefaultParametersAsync();
                 routeParamsFuture.addDoneListener(() -> {
+
 
                     try {
                         routeParameters = routeParamsFuture.get();

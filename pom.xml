@@ -48,13 +48,12 @@
     </dependency>
     <!--引入arcgis_api_java-->
     <dependency>
-      <groupId>arcgis.api.java </groupId>
+      <groupId>com.arcgis</groupId>
       <artifactId>arcgis-java</artifactId>
       <version>100.2.0</version>
     </dependency>
     <!--arcgis路径需要的jar包：结束-->
   </dependencies>
-
 
   <build>
     <plugins>
